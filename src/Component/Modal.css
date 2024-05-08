@@ -1,0 +1,68 @@
+/* Modal.css */
+
+.modal1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal1.open {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* background-color: #FAF5F5; */
+    /* background: transparent; */
+ 
+}
+  
+  .modal-content1 {
+    background-color: #FAF5F5;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  }
+  
+  .modal1 h2 {
+    margin-bottom: 10px;
+  }
+  
+  .modal1 label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .modal1 input[type="text"],
+  .modal1 input[type="number"] {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal1 button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #F16145;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal1 button.cancel {
+    background-color: #dc3545;
+  }
+  @media screen and (max-width: 768px) {
+   .modal-content1{
+    width: 80%;
+    /* padding-top: 100px; */
+   }
+  }

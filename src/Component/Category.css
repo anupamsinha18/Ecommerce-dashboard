@@ -1,0 +1,105 @@
+
+  
+  .category {
+    background-color: #eff1f3;
+    min-height: 100vh;
+    display: flex;
+    position: absolute;
+    left:200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(0, 0, 0);
+  }
+  
+  .category h1{
+    color: black;
+  }
+  .filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    max-width: 200px;
+    height: 40vmax
+  }
+  
+  .product-item:hover  {
+    transform: translateY(-5px);
+  }
+  .fs{
+    color: black;
+  }
+  
+  .product-img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .details {
+    padding: 10px;
+  }
+  
+  .product-item {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: black;
+  }
+  
+  .product-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .product-item p {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  #catagorieSelect{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .category {
+      left: 14%;
+
+      /* position: static; Reset position for smaller screens */
+     /* Adjust width for better visibility */
+    }
+    .product-item {
+      width: calc(50% - 40px); /* Adjust card width to fit two cards in a row */
+      max-width: none; /* Remove max-width for better responsiveness */
+      margin: 10px; /* Reduce margin for spacing between cards */
+    }
+  }

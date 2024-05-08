@@ -1,0 +1,58 @@
+    .add-table{
+    position: absolute;
+    left: 250px;
+    top:100px;
+
+}
+.table-card{
+    width: 170px;
+        border: 1px solid rgb(239, 243, 241)  ;
+    box-shadow: 1px 1px;
+    height: 100px;
+}
+.table-card button{
+    width: 200px ;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.add {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #F16145;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .table-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .table-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .add-table {
+      left: 30%; /* Adjust position for smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .add-table {
+      left: 20%;
+top:5%;
+      /* position: static; Reset position for smaller screens */
+      margin: 20px auto; /* Center the element horizontally */
+     /* Adjust width for better visibility */
+    }
+  
+    .table-card {
+      /* width: 100%; Make cards full-width on smaller screens */
+    }
+  }

@@ -1,0 +1,89 @@
+  .left-sidebar {
+      width: 200px;
+      position: fixed;
+      height: 100%;
+    
+      background-color: #faf5f5;
+
+    }
+    
+    .menuitem {
+      list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: space-evenly;
+      padding: 0;
+      color: rgb(7, 7, 7);
+
+    }
+    .icon {
+      width: 50px; /* Set the width of the container */
+      height: 50px; /* Set the height of the container */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      /* background-color: #333; */
+    /* Make it round */
+      /* Adjust margin as needed */
+    }
+    
+    .icon svg {
+      width: 40px; /* Set the size of the SVG icon */
+      height: 50px;
+      fill: white;
+      transition: ease 1.4s; /* Set the color of the icon */
+    }
+    svg:hover{
+  transform: scale(1.3);
+    }
+
+  
+
+  .rightside svg{
+      /* height: 30px; */
+      width: 30px ;
+      margin-left: -100px;
+    }
+    .top-header{
+      /* margin-left: -20px; */
+      width: 100%;
+      height: 60px;
+      align-items: center;
+      background-color: #FAF5F5;
+      /* flex-direction: row; */
+      display: flex;
+      justify-content: end;
+    }
+  .rightside{
+      display: flex;
+      width: 30px;
+      /* flex-direction: row; */
+          
+  }
+  
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .left-sidebar {
+    /* width: 100%; */
+    width: 18%;
+  }
+
+
+  .rightside {
+    margin-right: 5px; /* Reduce margin for smaller screens */
+  }
+  .top-header{
+    height: 40px;
+  }
+ 
+ .menuitem svg{
+  
+ }
+}
+@media screen and (max-width: 768px) {
+
+}
